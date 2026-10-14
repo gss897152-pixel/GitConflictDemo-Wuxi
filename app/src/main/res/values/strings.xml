@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitConflictDemo-Wuxi</string>
+    <string name="button_one">Button 1</string>
+    <string name="button_two">Button 2</string>
+    <string name="button_one_clicked">Button 1 clicked</string>
+    <string name="button_two_clicked">Button 2 clicked</string>
+</resources>
