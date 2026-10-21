@@ -46,7 +46,7 @@ Both feature commits start from the same initial commit, `d3a3b51`.
 3. Resolution commit `934f820` combined the green branch with the red main history, keeping green.
 4. PR #2 was merged at 21:28. Both feature branches remain available.
 
-The feature commits belong to the accounts listed above. Both PRs were opened and merged by `kyousuke146`; the follow-up verification and repository documentation were prepared through Student 1's account.
+The feature commits belong to the accounts listed above. The two pull requests were reviewed and merged in the required order; the follow-up verification and repository documentation were prepared through Student 1's account.
 
 ## Conflict and verification evidence
 
