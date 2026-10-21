@@ -1,0 +1,73 @@
+Historical conflict reproduction
+Generated on 21 October 2026 from the recorded commit versions.
+
+Command:
+git merge-tree --write-tree 4a6c03705d69eefa0899f8909678e7793ca8d0f2 0357bee12f105814432a91a6f3a1f196b3d624cc
+Exit code: 1 (content conflict)
+
+Git output:
+eba645f66056164ee4ff297e5bf06f384276e21e
+100644 381c4efdfe00d332d7ae689fd706b3f28e3b3f7b 1	app/src/main/res/layout/activity_main.xml
+100644 35bf3a936a9b18c681ec1e50d7ded0b9aa5a936b 2	app/src/main/res/layout/activity_main.xml
+100644 95622d33b46d5c2fea28e81be3982ee9c2bb210e 3	app/src/main/res/layout/activity_main.xml
+
+Auto-merging app/src/main/res/layout/activity_main.xml
+CONFLICT (content): Merge conflict in app/src/main/res/layout/activity_main.xml
+
+Quoted reconstructed activity_main.xml (each following line is prefixed with '| '):
+| <?xml version="1.0" encoding="utf-8"?>
+| <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+|     android:id="@+id/main"
+|     android:layout_width="match_parent"
+|     android:layout_height="match_parent"
+|     android:background="#FFFFFF"
+|     android:fitsSystemWindows="true"
+|     android:gravity="center"
+|     android:orientation="vertical">
+|
+|     <TextView
+|         android:layout_width="match_parent"
+|         android:layout_height="wrap_content"
+|         android:layout_marginStart="24dp"
+|         android:layout_marginEnd="24dp"
+|         android:layout_marginBottom="24dp"
+|         android:gravity="center"
+|         android:text="@string/app_name"
+|         android:textColor="#212121"
+|         android:textSize="26sp"
+|         android:textStyle="bold" />
+|
+|     <Button
+|         android:id="@+id/button_one"
+|         android:layout_width="match_parent"
+|         android:layout_height="56dp"
+|         android:layout_marginStart="24dp"
+|         android:layout_marginEnd="24dp"
+| <<<<<<< 4a6c03705d69eefa0899f8909678e7793ca8d0f2
+|         android:backgroundTint="#F44336"
+| =======
+|         android:backgroundTint="#4CAF50"
+| >>>>>>> 0357bee12f105814432a91a6f3a1f196b3d624cc
+|         android:text="@string/button_one"
+|         android:textAllCaps="false"
+|         android:textColor="#FFFFFF"
+|         android:textSize="18sp" />
+|
+|     <Button
+|         android:id="@+id/button_two"
+|         android:layout_width="match_parent"
+|         android:layout_height="56dp"
+|         android:layout_marginStart="24dp"
+|         android:layout_marginEnd="24dp"
+|         android:layout_marginTop="12dp"
+| <<<<<<< 4a6c03705d69eefa0899f8909678e7793ca8d0f2
+|         android:backgroundTint="#F44336"
+| =======
+|         android:backgroundTint="#4CAF50"
+| >>>>>>> 0357bee12f105814432a91a6f3a1f196b3d624cc
+|         android:text="@string/button_two"
+|         android:textAllCaps="false"
+|         android:textColor="#FFFFFF"
+|         android:textSize="18sp" />
+|
+| </LinearLayout>
